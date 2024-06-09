@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# Crypto Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+- [Initial Setup](#initial-setup)
+- [Landing Page](#landing-page)
+- [Dashboard Page](#dashboard-page)
+- [Coin Page](#coin-page)
+- [Compare Page](#compare-page)
+- [Light Mode Dark Mode](#light-mode-dark-mode)
+- [Watchlist](#watchlist)
+- [Other Features](#other-features)
+- [Deployment](#deployment)
 
-In the project directory, you can run:
+--- 
 
-### `npm start`
+# Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Initial Setup
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+0. **Root Variables and Fonts**
+    - Defined root variables for consistent theming.
+    - Integrated Google Fonts for custom typography.
+1. **Custom Scroll Bar**
+    - Styled the scrollbar for a better user experience.
+2. **Custom Selection**
+    - Applied custom styling to text selections.
+3. **Disabling Image Dragging**
+    - Disabled image dragging to prevent undesired behaviors.
 
-### `npm test`
+## Landing Page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Header**
+    - Implemented a header using MUI Drawer for navigation.
+5. **Text Stroke Hover Animation**
+    - Added a hover animation with text stroke effect on the landing page.
+6. **Entrance Animation**
+    - Utilized Framer Motion for animating phone entrance and text.
 
-### `npm run build`
+## Dashboard Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+7. **MUI Tab Component**
+    - Custom-themed MUI Tab component for dashboard navigation.
+8. **Data Fetching**
+    - Fetched cryptocurrency data from the CoinGecko API using Axios.
+9. **Number Formatting**
+    - Used `toLocaleString()` to format numbers with commas.
+    - Used `toFixed(2)` to format numbers to two decimal places.
+10. **Number Conversion**
+    - Created a custom function to convert numbers to K, M, B formats.
+11. **Search Functionality**
+    - Implemented search using the `.filter()` method.
+12. **Animation Delay**
+    - Added delay in animations for Grid and List components.
+13. **Pagination**
+    - Implemented pagination using MUI, slicing data according to the page number.
+14. **Scroll to Top**
+    - Wrote a JavaScript function to scroll to the top of the page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Coin Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+15. **Router Params**
+    - Used router parameters to get the ID of the cryptocurrency.
+16. **Data Fetching by ID**
+    - Fetched data and prices for a specific number of days using the cryptocurrency ID.
+17. **Charts**
+    - Utilized `react-chartjs-2` to create charts.
+18. **Date Array**
+    - Created a function to get an array of dates for a specified number of days.
+19. **MUI Select**
+    - Implemented MUI Select to choose the number of days and fetch prices accordingly.
+20. **MUI Toggle Buttons**
+    - Used MUI Toggle Buttons to get prices, market cap, and volume values.
+21. **Dangerously Set Inner HTML**
+    - Used `dangerouslySetInnerHTML` attribute to render HTML strings.
+22. **Loading Component**
+    - Created a loading component to ensure data is loaded before rendering.
+23. **Custom Styled Object**
+    - Styled MUI components using custom styled objects.
+    - Added "Read More" or "Read Less" functionality.
 
-### `npm run eject`
+## Compare Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+24. **Simultaneous Graphs**
+    - Implemented two simultaneous graphs with two Y-axes and two datasets.
+25. **Select Component**
+    - Used MUI Select component to list the top 100 coins.
+26. **Unique Coin Selection**
+    - Ensured that the same coin cannot be selected in both selectors.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Light Mode Dark Mode
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+27. **Theme Management**
+    - Managed themes using local storage and a `data-theme` variable in CSS.
+28. **Root Variable Updates**
+    - Updated root variables according to the selected theme.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Watchlist
 
-## Learn More
+29. **Adding to Watchlist**
+    - Added functionality to add coins to a watchlist using local storage.
+30. **Removing from Watchlist**
+    - Added functionality to remove coins from the watchlist.
+31. **Watchlist Page**
+    - Used `useEffect` to manage the watchlist page.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Other Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+32. **Web Share API**
+    - Integrated `RWebShare` npm package for sharing functionality.
+33. **Custom Mouse Pointer**
+    - Created custom mouse pointers using two divs that follow the mouse with a delay.
+34. **MUI Icons**
+    - Utilized MUI Icons throughout the project.
+35. **SEO Optimization**
+    - Improved SEO and ensured code modularity and reusability.
+36. **Hosting**
+    - Hosted the project using Netlify with a `netlify.toml` configuration file.
+37. **Gradient Footer**
+    - Added a gradient animation to the footer.
+38. **Toasts**
+    - Integrated `react-toastify` to show toasts for various actions.
 
-### Code Splitting
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The project is hosted using Netlify.
