@@ -1,14 +1,10 @@
 import "./App.css";
-import Header from "./components/Common/Header";
-import Footer from "./components/Common/Footer/Footer";
-import MainComponent from "./components/LandingPage/MainComponent";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div>
-      <Header />
-      <MainComponent />
-      <Footer />
+      <Home />
     </div>
   );
 }
