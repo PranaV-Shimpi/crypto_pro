@@ -9,6 +9,7 @@
 .heading2 {
   font-size: 6rem;
   margin: 0;
+  text-align: left;
 }
 
 .heading1:hover {
