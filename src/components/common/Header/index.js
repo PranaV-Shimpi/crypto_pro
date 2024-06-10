@@ -41,22 +41,24 @@ function Header() {
 
   return (
     <div className="header">
-      <h1>
-        CryptoPRO<span style={{ color: "var(--blue)" }}>.</span>
-      </h1>
+      <Link to="/" className="link">
+        <h1>
+          CryptoPRO<span style={{ color: "var(--blue)" }}>.</span>
+        </h1>
+      </Link>
       <div className="links">
         <Switch checked={darkMode} onClick={() => changeMode()} />
-        <Link to="/">
-          <p className="link">Home</p>
+        <Link to="/" className="link">
+          Home
         </Link>
-        <Link to="/compare">
-          <p className="link">Compare</p>
+        <Link to="/compare" className="link">
+          Compare
         </Link>
-        <Link to="/watchlist">
-          <p className="link">Watchlist</p>
+        <Link to="/watchlist" className="link">
+          Watchlist
         </Link>
         <Link to="/dashboard">
-          <Button text={"dashboard"} />
+          <Button text="dashboard" onClick={() => {}} />
         </Link>
       </div>
       <div className="drawer-component">
