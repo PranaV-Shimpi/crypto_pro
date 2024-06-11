@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { createTheme, ThemeProvider } from "@mui/material";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-// import Coin from "./pages/Coin";
+import Coin from "./pages/CoinPage";
 // import Compare from "./pages/Compare";
 import Home from "./pages/Home";
 import DashboardPage from "./pages/DashboardPage";
