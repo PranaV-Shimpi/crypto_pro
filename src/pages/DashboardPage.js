@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Header from "../components/Common/Header";
 import Loader from "../components/Common/Loader";
