@@ -1,0 +1,38 @@
+.topp-btn {
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    display: none; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: var(--blue);
+    color: var(--black);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .topp-btn:hover {
+    background-color: lightblue;
+    color: darkblue;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  #top-btn {
+    animation: floating 2s infinite;
+  }
