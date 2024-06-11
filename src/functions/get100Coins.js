@@ -5,10 +5,10 @@ export const get100Coins = async () => {
     const response = await axios.get(
       "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
     );
-    console.log("RESPONSE>>>", response.data);
+    // console.log("RESPONSE>>>", response.data);
     return response.data;
   } catch (error) {
     console.log("ERROR>>>", error.message);
-    throw error; // Rethrow the error so it can be handled by the caller
+    throw error; 
   }
 };
