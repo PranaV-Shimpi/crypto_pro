@@ -8,6 +8,7 @@ import TabsComponent from "../components/Dashboard/Tabs";
 import PaginationComponent from "../components/Dashboard/Pagination";
 import TopButton from "../components/Common/TopButton";
 import Footer from "../components/Common/Footer";
+import { get100Coins } from "../functions/get100Coins";
 
 function DashboardPage() {
   const [coins, setCoins] = useState([]);
@@ -21,21 +22,17 @@ function DashboardPage() {
     getData();
   }, []);
 
-  const getData = () => {
+  const getData = async () => {
     setLoading(true);
-    axios
-      .get(
-        "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false"
-      )
-      .then((response) => {
-        console.log("RESPONSE>>>", response.data);
-        setCoins(response.data);
-        setPaginatedCoins(response.data.slice(0, 10));
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.log("ERROR>>>", error.message);
-      });
+    try {
+      const data = await get100Coins();
+      setCoins(data);
+      setPaginatedCoins(data.slice(0, 10));
+    } catch (error) {
+      console.error("Failed to fetch coins data", error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (e) => {
