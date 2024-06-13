@@ -1,0 +1,22 @@
+.chart-container {
+  position: relative;
+  width: 90%;
+  margin: 2rem auto;
+  background-color: var(--black);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    height: 300px;
+    padding: 0.5rem;
+  }
+}
+
+.chart-container canvas {
+  width: 100% !important;
+  height: 100% !important;
+}

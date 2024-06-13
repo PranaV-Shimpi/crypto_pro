@@ -1,7 +1,22 @@
 .select-days {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .css-ueukts-MuiButtonBase-root-MuiToggleButton-root   {
+    line-height: 1.2 !important ; 
+    padding: 7px 8px !important;
   }
+  .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input{
+    padding: 2px 8px !important;
+    font-size: 0.75rem !important;
+  }
+  .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input{
+    padding-right: 32px !important;
+  }
+}

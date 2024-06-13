@@ -1,13 +1,33 @@
+.info-component {
+  text-align: left;
+}
+
 .info-component h1 {
-    font-size: 1.2rem;
-    margin: 0;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0.25rem 3rem;
+}
+
+.info-p {
+  padding: 0.25rem 3rem;
+}
+
+.info-p a {
+  text-decoration: underline;
+  padding: 0.25rem 3rem;
+}
+
+.info-p a:hover {
+  color: var(--blue) !important;
+  transition: all 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+  .info-component h1,
+  .info-p {
+    padding: 0.25rem 0.5rem;
   }
-  
   .info-p a {
-    text-decoration: underline;
+    padding: 0.25rem 0.5rem;
   }
-  
-  .info-p a:hover {
-    color: var(--blue) !important;
-    transition: all 0.3s;
-  }
+}
