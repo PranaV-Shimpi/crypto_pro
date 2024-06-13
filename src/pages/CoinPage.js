@@ -12,6 +12,7 @@ import { getCoinData } from "../functions/getCoinData";
 import { getPrices } from "../functions/getPrices";
 import { settingChartData } from "../functions/settingChartData";
 import { settingCoinObject } from "../functions/settingCoinObject";
+import { Link } from "react-router-dom";
 
 function Coin() {
   const { id } = useParams();
@@ -70,6 +71,7 @@ function Coin() {
           <div className="grey-wrapper">
             <List coin={coin} delay={0.5} />
           </div>
+          <Info title={coin.name} desc={coin.desc} />
           <div className="grey-wrapper">
             <SelectDays handleDaysChange={handleDaysChange} days={days} />
             <ToggleComponents
@@ -78,7 +80,6 @@ function Coin() {
             />
             <LineChart chartData={chartData} />
           </div>
-          <Info title={coin.name} desc={coin.desc} />
         </>
       ) : error ? (
         <div>
@@ -92,9 +93,9 @@ function Coin() {
               margin: "2rem",
             }}
           >
-            <a href="/dashboard">
-              <Button text="Dashboard" />
-            </a>
+            <Link to="/dashboard">
+              <Button text="dashboard" onClick={() => {}} />
+            </Link>
           </div>
         </div>
       ) : (

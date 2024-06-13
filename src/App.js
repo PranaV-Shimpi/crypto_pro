@@ -74,8 +74,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<DashboardPage />} />
-            {/* <Route path="/coin/:id" element={<Coin />} />
-            <Route path="/compare" element={<Compare />} />
+            <Route path="/coin/:id" element={<Coin />} />
+            {/* <Route path="/compare" element={<Compare />} />
             <Route path="/watchlist" element={<Watchlist />} /> */}
           </Routes>
         </BrowserRouter>
