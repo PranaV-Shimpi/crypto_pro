@@ -16,6 +16,13 @@
   }
 }
 
+@media (max-width: 500px) {
+  .chart-container {
+    height: 175px;
+    padding: 0.5rem;
+  }
+}
+
 .chart-container canvas {
   width: 100% !important;
   height: 100% !important;
