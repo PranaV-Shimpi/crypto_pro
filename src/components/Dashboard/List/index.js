@@ -9,12 +9,13 @@ import StarOutlineIcon from "@mui/icons-material/StarOutline";
 import { saveItemToWatchlist } from "../../../functions/saveItemToWatchlist";
 import StarIcon from "@mui/icons-material/Star";
 import { removeItemToWatchlist } from "../../../functions/removeItemToWatchlist";
+import { Link } from "react-router-dom";
 
 function List({ coin, delay }) {
   const watchlist = JSON.parse(localStorage.getItem("watchlist"));
   const [isCoinAdded, setIsCoinAdded] = useState(watchlist?.includes(coin.id));
   return (
-    <a href={`/coin/${coin.id}`}>
+    <Link to={`/coin/${coin.id}`}>
       <motion.tr
         className="list-row"
         initial={{ opacity: 0, x: -50 }}
@@ -23,7 +24,11 @@ function List({ coin, delay }) {
       >
         <Tooltip title="Coin Image">
           <td className="td-img">
-            <img src={coin.image} className="coin-image coin-image-td" alt="coin-img"/>
+            <img
+              src={coin.image}
+              className="coin-image coin-image-td"
+              alt="coin-img"
+            />
           </td>
         </Tooltip>
         <Tooltip title="Coin Info" placement="bottom-start">
@@ -101,7 +106,7 @@ function List({ coin, delay }) {
           {isCoinAdded ? <StarIcon /> : <StarOutlineIcon />}
         </td>
       </motion.tr>
-    </a>
+    </Link>
   );
 }
 
