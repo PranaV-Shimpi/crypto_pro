@@ -1,6 +1,6 @@
 import React from "react";
 import { Line } from "react-chartjs-2";
-import { Chart as ChartJS } from "chart.js/auto"; //Dont get rid of this
+import { Chart as ChartJS } from "chart.js/auto"; // Don't get rid of this
 import './styles.css'
 
 function LineChart({ chartData, multiAxis }) {
@@ -19,9 +19,11 @@ function LineChart({ chartData, multiAxis }) {
       crypto1: {
         position: "left",
       },
-      crypto2: multiAxis && {
-        position: "right",
-      },
+      ...(multiAxis && {
+        crypto2: {
+          position: "right",
+        }
+      }),
     },
   };
 
@@ -33,3 +35,4 @@ function LineChart({ chartData, multiAxis }) {
 }
 
 export default LineChart;
+
