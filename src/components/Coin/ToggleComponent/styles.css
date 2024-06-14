@@ -10,12 +10,14 @@
   background-color: var(--white) !important;
 }
 
-.css-jtwahz-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped {
+.css-jtwahz-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped,
+.css-17tj1wv-MuiToggleButtonGroup-root .MuiToggleButton-standard {
   min-width: 170px !important;
 }
 
 @media only screen and (max-width: 600px) {
-  .css-jtwahz-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped {
+  .css-jtwahz-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped,
+  .css-17tj1wv-MuiToggleButtonGroup-root .MuiToggleButton-standard {
     min-width: 100px !important;
   }
 }
