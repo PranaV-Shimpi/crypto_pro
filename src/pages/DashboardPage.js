@@ -36,17 +36,8 @@ function DashboardPage() {
 
   const handleChange = (e) => {
     setSearch(e.target.value);
-    console.log(e.target.value);
+    // console.log(e.target.value);
   };
-
-  // var filteredCoins = coins.filter((coin) => {
-  //   if (
-  //     coin.name.toLowerCase().includes(search.trim().toLowerCase()) ||
-  //     coin.symbol.toLowerCase().includes(search.trim().toLowerCase())
-  //   ) {
-  //     return coin;
-  //   }
-  // });
 
   var filteredCoins = coins.filter(
     (coin) =>
