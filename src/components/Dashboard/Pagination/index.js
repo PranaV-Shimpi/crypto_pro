@@ -18,9 +18,9 @@ export default function PaginationComponent({ page, handlePageChange }) {
 
           },
           "& .Mui-selected  ": {
-            backgroundColor: "var(--grey)",
-            borderColor: "var(--white)",
-            color: "var(--black) !important"
+            backgroundColor: "var(--blue) !important",
+            borderColor: "var(--white) !important",
+            color: "var(--white) !important"
           },
           "& .MuiPaginationItem-ellipsis": {
             border: "none",
