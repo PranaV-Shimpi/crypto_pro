@@ -28,7 +28,7 @@ export default function ToggleComponents({ priceType, handlePriceTypeChange }) {
             color: "var(--white)  ",
           },
           "& .MuiToggleButton-standard": {
-            color: "var(--white) ",
+            color: "var(--white)",
           },
         }}
       >
