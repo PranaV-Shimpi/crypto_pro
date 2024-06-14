@@ -8,7 +8,7 @@
     height: 50px;
     width: 50px;
     background-color: var(--blue);
-    color: var(--black);
+    color: #FFF;
     border: none;
     border-radius: 50%;
     cursor: pointer;
