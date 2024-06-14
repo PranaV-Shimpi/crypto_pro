@@ -1,0 +1,21 @@
+.toggle-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.css-ueukts-MuiButtonBase-root-MuiToggleButton-root.Mui-selected {
+  color: var(--black) !important;
+  background-color: var(--white) !important;
+}
+
+.css-jtwahz-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped {
+  min-width: 170px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .css-jtwahz-MuiToggleButtonGroup-root .MuiToggleButtonGroup-grouped {
+    min-width: 100px !important;
+  }
+}

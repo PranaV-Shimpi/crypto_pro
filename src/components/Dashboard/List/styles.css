@@ -87,7 +87,7 @@
   }
   .list-row td,
   .td-p {
-    font-size: 0.6rem !important;
+    font-size: 0.5rem !important;
   }
 
   .td-info {
@@ -98,4 +98,9 @@
     height: 2rem !important;
     width: 2rem !important;
   }
+
+  .td-img {
+    
+    margin-right: 0.2rem;
+}
 }

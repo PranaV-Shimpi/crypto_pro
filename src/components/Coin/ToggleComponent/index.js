@@ -5,17 +5,11 @@ import FormatAlignJustifyIcon from "@mui/icons-material/FormatAlignJustify";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import { useState } from "react";
+import "./styles.css";
 
 export default function ToggleComponents({ priceType, handlePriceTypeChange }) {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        marginBottom: "1.5rem",
-      }}
-    >
+    <div className="toggle-component">
       <ToggleButtonGroup
         value={priceType}
         exclusive
@@ -24,17 +18,17 @@ export default function ToggleComponents({ priceType, handlePriceTypeChange }) {
         }}
         sx={{
           "&.Mui-selected": {
-            color: "var(--blue) !important",
+            color: "var(--white)",
           },
-          borderColor: "var(--blue)",
+          borderColor: "var(--white)",
           border: "unset !important",
           "& .MuiToggleButtonGroup-grouped": {
-            border: "1px solid var(--blue)!important",
-            borderColor: "unset",
-            color: "var(--blue) !important ",
+            border: "1px solid var(--white)",
+            borderColor: "var(--white)  ",
+            color: "var(--white)  ",
           },
           "& .MuiToggleButton-standard": {
-            color: "var(--blue) !important",
+            color: "var(--white) ",
           },
         }}
       >
