@@ -2,7 +2,7 @@
 
 :root {
   --white: #fff;
-  --black: #111;
+  --black: #36454F;
   --blue: #3a80e9;
   --grey: #888;
   --darkgrey: #1b1b1b;
@@ -12,13 +12,13 @@
 
 [data-theme="dark"] {
   --white: #ffffff;
-  --black: #111;
+  --black: #36454F;
   --grey: #888;
   --darkgrey: #1b1b1b;
 }
 
 [data-theme="light"] {
-  --white: #111;
+  --white: #36454F;
   --black: #fff;
   --grey: #888;
   --darkgrey: #f3f3f3;
