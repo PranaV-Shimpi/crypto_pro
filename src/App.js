@@ -3,10 +3,10 @@ import { createTheme, ThemeProvider } from "@mui/material";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Coin from "./pages/CoinPage";
-// import Compare from "./pages/Compare";
+import Compare from "./pages/Compare";
 import Home from "./pages/Home";
 import DashboardPage from "./pages/DashboardPage";
-// import Watchlist from "./pages/Watchlist";
+import Watchlist from "./pages/Watchlist";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -75,8 +75,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<DashboardPage />} />
             <Route path="/coin/:id" element={<Coin />} />
-            {/* <Route path="/compare" element={<Compare />} />
-            <Route path="/watchlist" element={<Watchlist />} /> */}
+            <Route path="/compare" element={<Compare />} />
+            <Route path="/watchlist" element={<Watchlist />} />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>
