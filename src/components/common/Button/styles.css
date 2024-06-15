@@ -20,7 +20,7 @@
   .btn-outlined {
     text-align: center;
     background-color: var(--black);
-    padding: 0.45rem 1.5rem;
+    padding: 0.35rem 1.5rem;
     border-radius: 3rem;
     font-weight: 600;
     font-size: 0.8rem;
@@ -33,6 +33,7 @@
   
   .btn-outlined:hover {
     background-color: var(--blue);
+    color: #fff;
     transition: all 0.3s;
   }
   
