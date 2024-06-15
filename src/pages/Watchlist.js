@@ -4,6 +4,7 @@ import Header from "../components/Common/Header";
 import TabsComponent from "../components/Dashboard/Tabs";
 import { get100Coins } from "../functions/get100Coins";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
 function Watchlist() {
   const watchlist = JSON.parse(localStorage.getItem("watchlist"));
@@ -40,9 +41,9 @@ function Watchlist() {
               margin: "2rem",
             }}
           >
-            <a href="/dashboard">
-              <Button text="Dashboard" />
-            </a>
+            <Link to="/dashboard">
+              <Button text="dashboard" onClick={() => {}} />
+            </Link>
           </div>
         </div>
       )}
