@@ -9,6 +9,7 @@ import DashboardPage from "./pages/DashboardPage";
 import Watchlist from "./pages/Watchlist";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import NotFound from "./pages/NotFound";
 
 function App() {
   const theme = createTheme({
@@ -67,7 +68,11 @@ function App() {
   return (
     <div className="App">
       <div className="cursor" ref={cursorRef} id="cursor" />
-      <div className="cursor-pointer" ref={cursorPointerRef} id="cursor-pointer" />
+      <div
+        className="cursor-pointer"
+        ref={cursorPointerRef}
+        id="cursor-pointer"
+      />
       <ToastContainer />
       <ThemeProvider theme={theme}>
         <BrowserRouter>
@@ -77,6 +82,7 @@ function App() {
             <Route path="/coin/:id" element={<Coin />} />
             <Route path="/compare" element={<Compare />} />
             <Route path="/watchlist" element={<Watchlist />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </ThemeProvider>
