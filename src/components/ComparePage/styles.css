@@ -1,0 +1,26 @@
+.select-coins-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1.5rem 3rem;
+  flex-wrap: wrap;
+}
+
+.select-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  min-width: 80px;
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .select-days {
+    padding: 0.1rem 0.75rem !important;
+  }
+}
