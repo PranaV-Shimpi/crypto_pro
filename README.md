@@ -2,6 +2,15 @@
 
 Welcome to the CryptoPro React project! This platform is a one-stop solution for tracking cryptocurrency prices, comparing them, and saving them for later. Users can also view charts and track the daily, weekly, monthly, and yearly performance of various cryptocurrencies. The application is fully responsive and supports multiple themes.
 
+- code: [source-code](https://github.com/PranaV-Shimpi/crypto_pro)
+- Live Link: [https://cryptoo-pro.netlify.app/](https://cryptoo-pro.netlify.app/)
+
+## Images
+![home](https://github.com/PranaV-Shimpi/crypto_pro/assets/40532644/597fc014-c33b-40f9-aa6a-5e5a9c894e38)
+![dashboard](https://github.com/PranaV-Shimpi/crypto_pro/assets/40532644/3191648c-dd7f-41ba-a26b-affe67445445)
+![details](https://github.com/PranaV-Shimpi/crypto_pro/assets/40532644/f229b078-06e4-4aae-bcfc-ddccf62def4f)
+
+
 # Features
 
 - **Real-time Crypto Prices**: Track the latest prices of various cryptocurrencies.
