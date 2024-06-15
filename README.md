@@ -1,4 +1,4 @@
-# Crypto Dashboard
+# Crypto PRO
 
 Welcome to the CryptoPro React project! This platform is a one-stop solution for tracking cryptocurrency prices, comparing them, and saving them for later. Users can also view charts and track the daily, weekly, monthly, and yearly performance of various cryptocurrencies. The application is fully responsive and supports multiple themes.
 
