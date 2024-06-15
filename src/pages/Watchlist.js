@@ -3,6 +3,7 @@ import Button from "../components/Common/Button";
 import Header from "../components/Common/Header";
 import TabsComponent from "../components/Dashboard/Tabs";
 import { get100Coins } from "../functions/get100Coins";
+import "./styles.css";
 
 function Watchlist() {
   const watchlist = JSON.parse(localStorage.getItem("watchlist"));
@@ -22,8 +23,9 @@ function Watchlist() {
   };
 
   return (
-    <div>
+    <div className="watchlist-page">
       <Header />
+      <h1>Your favourite coins:</h1>
       {watchlist?.length > 0 ? (
         <TabsComponent coins={coins} />
       ) : (

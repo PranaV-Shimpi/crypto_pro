@@ -5,12 +5,20 @@
   height: 100vh;
 }
 
-.grey-wrapper{
+.grey-wrapper {
   padding: 1rem 2rem;
 }
 
 @media only screen and (max-width: 600px) {
   .home {
     display: block;
+  }
+  .compare-page h1 {
+    font-size: 20px;
+    padding: 1rem 2rem;
+  }
+  .watchlist-page h1 {
+    font-size: 20px;
+    padding: 1rem 2rem;
   }
 }

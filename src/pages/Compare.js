@@ -11,6 +11,7 @@ import { getCoinData } from "../functions/getCoinData";
 import { getPrices } from "../functions/getPrices";
 import { settingChartData } from "../functions/settingChartData";
 import { settingCoinObject } from "../functions/settingCoinObject";
+import './styles.css'
 
 function Compare() {
   const [allCoins, setAllCoins] = useState([]);
@@ -101,8 +102,9 @@ function Compare() {
   };
 
   return (
-    <div>
+    <div className="compare-page">
       <Header />
+      <h1>Compare your favourite coins:</h1>
       {loading || !coin1Data?.id || !coin2Data?.id ? (
         <Loader />
       ) : (
