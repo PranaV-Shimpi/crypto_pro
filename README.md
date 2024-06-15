@@ -1,51 +1,47 @@
 # Crypto Dashboard
 
-## Table of Contents
-
-- [Initial Setup](#initial-setup)
-- [Landing Page](#landing-page)
-- [Dashboard Page](#dashboard-page)
-- [Coin Page](#coin-page)
-- [Compare Page](#compare-page)
-- [Light Mode Dark Mode](#light-mode-dark-mode)
-- [Watchlist](#watchlist)
-- [Other Features](#other-features)
-- [Deployment](#deployment)
-
---- 
+Welcome to the CryptoPro React project! This platform is a one-stop solution for tracking cryptocurrency prices, comparing them, and saving them for later. Users can also view charts and track the daily, weekly, monthly, and yearly performance of various cryptocurrencies. The application is fully responsive and supports multiple themes.
 
 # Features
+
+- **Real-time Crypto Prices**: Track the latest prices of various cryptocurrencies.
+- **Comparison Tool**: Compare prices of different cryptocurrencies.
+- **Save for Later**: Save selected cryptocurrencies to your favorites for easy access.
+- **Performance Charts**: View daily, weekly, monthly, and yearly performance charts of cryptocurrencies.
+- **Responsive Design**: Fully responsive design for optimal viewing on all devices.
+- **Toasts**: Integrated `react-toastify` to show toasts for various actions, providing confirmation effects and notifications.
+- **Theme Support**: Switch between different themes to customize the look and feel of the application.
 
 ## Initial Setup
 
 0. **Root Variables and Fonts**
-    - Defined root variables for consistent theming.
-    - Integrated Google Fonts for custom typography.
+   - Defined root variables for consistent theming.
+   - Integrated Google Fonts for custom typography.
 1. **Custom Scroll Bar**
-    - Styled the scrollbar for a better user experience.
+   - Styled the scrollbar for a better user experience.
 2. **Custom Selection**
-    - Applied custom styling to text selections.
+   - Applied custom styling to text selections.
 3. **Disabling Image Dragging**
-    - Disabled image dragging to prevent undesired behaviors.
+   - Disabled image dragging to prevent undesired behaviors.
 
 ## Landing Page
 
 4. **Header**
-    - Implemented a header using MUI Drawer for navigation.
+   - Implemented a header using MUI Drawer for navigation.
 5. **Text Stroke Hover Animation**
-    - Added a hover animation with text stroke effect on the landing page.
+   - Added a hover animation with text stroke effect on the landing page.
 6. **Entrance Animation**
-    - Utilized Framer Motion for animating phone entrance and text.
+   - Utilized Framer Motion for animating phone entrance and text.
 
 ## Dashboard Page
 
 7. **MUI Tab Component**
-    - Custom-themed MUI Tab component for dashboard navigation.
+   - Custom-themed MUI Tab component for dashboard navigation.
 8. **Data Fetching**
-    - Fetched cryptocurrency data from the CoinGecko API using Axios.
+   - Fetched cryptocurrency data from the CoinGecko API using Axios.
 9. **Number Formatting**
-    - Used `toLocaleString()` to format numbers with commas.
-    - Used `toFixed(2)` to format numbers to two decimal places.
+   - Used `toLocaleString()` to format numbers with commas.
+   - Used `toFixed(2)` to format numbers to two decimal places.
 10. **Number Conversion**
     - Created a custom function to convert numbers to K, M, B formats.
 11. **Search Functionality**
@@ -124,3 +120,11 @@
 ## Deployment
 
 The project is hosted using Netlify.
+
+---
+
+<div align="center">
+
+### Made with ❤️ by Pranav Shimpi
+
+</div>
