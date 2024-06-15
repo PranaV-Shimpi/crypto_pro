@@ -11,7 +11,7 @@ import { getCoinData } from "../functions/getCoinData";
 import { getPrices } from "../functions/getPrices";
 import { settingChartData } from "../functions/settingChartData";
 import { settingCoinObject } from "../functions/settingCoinObject";
-import './styles.css'
+import "./styles.css";
 
 function Compare() {
   const [allCoins, setAllCoins] = useState([]);
@@ -120,11 +120,11 @@ function Compare() {
           <div className="grey-wrapper">
             <List coin={coin1Data} />
           </div>
-          <Info title={coin1Data.name} desc={coin1Data.desc} />
+          <Info title={coin1Data.name} desc={coin1Data.description} />
           <div className="grey-wrapper">
             <List coin={coin2Data} />
           </div>
-          <Info title={coin2Data.name} desc={coin2Data.desc} />
+          <Info title={coin2Data.name} desc={coin2Data.description} />
           <div className="grey-wrapper">
             <ToggleComponents
               priceType={priceType}
